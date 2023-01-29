@@ -8,13 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Material Angular
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { AuthComponent } from './components/auth/auth.component';
+import { AccountComponent } from './components/account/account.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AuthComponent, AccountComponent, AvatarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
